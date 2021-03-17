@@ -1,5 +1,7 @@
 body{
 	background:#1C1C1C;
+	padding:0px;
+	margin:0px;
 }
 #header{
 	width:100%;
@@ -12,13 +14,13 @@ body{
 	background:#99ff99;
 }
 #left{
-	width:10%;
+	width:20%;
 	height:100%;
 	float:left;
 	background:#999999;
 }
 #center{
-	width:70%;
+	width:60%;
 	height:100%;
 	float:left;
 	background:SlateGrey;
