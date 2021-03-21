@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>
-		</title>
-		<meta charset="utf-8"/>
-		<link type="text/css" rel="stylesheet" href="./ALL_CSS/Linux_C_C++.css"/>
+	<head>     
+		<title>Ceelia</title>
+		<meta charset="UTF-8"/>
 	</head>
-	Tue 16 Mar 11:29:27 2021<br/>
 	<body>
-		&lt;unistd.h&gt;
-		fork(),
+     	<h1>Cee-Blog</h1>
+		<header>
+			<!--网站导航链接-->
+			<nav>
+				<ul>
+					<li><a href="./index.html">首页</a></li>
+					<li><a href="./help.html">帮助</a></li>
+				</ul>
+			</nav>
+		</header>
+		<article>
+			<header>
+				<h3>I/O重定向</h3>
+			</header>
+			<p>
+			程序运行会自从生成三个文件描述符(fildes):0,1,2;
+			分别是:stdin,stdout,stderr.
+			可以通过open()函数接口进行文件描述符与文件的关联,
+			也就是将fildes定向到某个文件.
+			stdout与stderr很特殊,它们定向到同一个文件(终端显示器).
+			建立关联(或称定向到某个文件)后就可以通过fildes来操作已打开的文件.
+			open()返回相应的fildes,如出错返回-1.
+			fildes遵循最小递增原则:如果多次调用那么第一次返回3,第二次返回4...
+			</p>
+
+			<p>
+			所谓重定向就是在文件被打开后,将相应的fildes重新定向到某个其他的文件.
+			一般会将输出到屏幕的字符定向到一个普通文件中作保留.
+			重定向使得程序具有了灵活性,其具体流程为:
+			<ol>
+				<li>打开A文件,返回一个fildesA(假如是3)</li>
+				<li>当我不想将操作流向A文件,希望流向B文件或是终端显示器</li>
+				<li>复制(dup)现有B文件的文件描述符返回fildesB</li>
+				<li>在将fildesB复制为(dup2)fildesA</li>
+			</ol>
+			此时在操作fildesA的话,不再影响A文件而是影响B文件
+			</p>
+		</article>
 	</body>
 </html>
