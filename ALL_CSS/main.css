@@ -14,10 +14,8 @@ body{
 	height:200px;
 	margin:auto;
 }                            
-#main img{
-	text-align:left;
-}
 #main ul{
+	float:left;
 	margin:0px;
 	width:130px;
 	height:215px;
@@ -29,21 +27,4 @@ footer{
 	clear:both;
 	height:80px;
 	background:#4F4F4F;
-}
-ul{
-	list-style:none;
- }
-ul li a{
-	text-decoration:none;
-	line-height:30px;
-	font-weight:bold;
-	margin:20 10px;
-	padding:10 1px;
-	color:#FFEFDB;
-}
-#main ul li a:hover{
-	color:snow;
-}
-ul li a:visited{
-	color:orange;
 }
