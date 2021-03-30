@@ -1,18 +1,18 @@
 ul{
 	list-style:none;
 }
-ul li a{
+a{
 	text-decoration:none;
 	line-height:30px;
 	font-weight:bold;
 	margin:20 10px;
 	padding:10 1px;
-	color:#FFEFDB;
+	color:#FFEFDB;		antiquewhite
 }
-#main ul li a:hover{
+a:hover{
 	color:snow;
 }
-ul li a:visited{
+a:visited{
 	color:orange;
 }
 

@@ -1,0 +1,29 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/ceelia/loveandevol.github.io/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20210328.0/
+#header	ALL_CSS/main.css	/^#header{$/;"	i
+#main	ALL_CSS/main.css	/^#main{$/;"	i
+#main ul	ALL_CSS/main.css	/^#main ul{$/;"	s
+Cee-Blog	cee_blog.html	/^			Cee-Blog<\/h2>$/;"	i
+Hello Ceelia	index.html	/^				Hello Ceelia<\/h2>$/;"	i
+a	ALL_CSS/navy.css	/^a{$/;"	s
+a:hover	ALL_CSS/navy.css	/^a:hover{$/;"	s
+a:visited	ALL_CSS/navy.css	/^a:visited{$/;"	s
+arr	HomeWork/python/chess.py	/^arr=np.zeros((8,8))$/;"	v
+article	ALL_CSS/cee_blog.css	/^article{$/;"	s
+body	ALL_CSS/cee_blog.css	/^body{$/;"	s
+body	ALL_CSS/main.css	/^body{$/;"	s
+footer	ALL_CSS/main.css	/^footer{$/;"	s
+header	index.html	/^		<div id="header" class="">$/;"	I
+main	index.html	/^		<div id="main">$/;"	I
+np	HomeWork/python/chess.py	/^import numpy as np$/;"	I	nameref:module:numpy
+p1	cee_blog.html	/^			<h4 id="p1">I\/O重定向<\/h4>$/;"	I
+ul	ALL_CSS/navy.css	/^ul{$/;"	s
