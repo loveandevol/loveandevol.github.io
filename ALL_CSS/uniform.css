@@ -1,0 +1,52 @@
+body{
+	padding:0px;
+	margin:0px;
+	font:16px sans-serif;
+	background:#1C1C1C;
+	color:orange;
+}
+/* ----------------主体宽度------------- */
+.width_800{ width:800px; }
+/* ----------------主体居中------------- */
+.auto_margin{ margin:auto; }
+/* ----------------导航样式------------- */
+nav{
+	height:30px;
+	margin:auto;
+}
+nav ul{
+	list-style-type:none; 
+	margin:0px;
+	padding:0px;
+}
+nav ul li{
+	/* white-azure */
+	border-bottom:1px solid #f0ffff;
+	width:200px;
+	float:left;
+}
+nav ul li a{ 
+	display:block;
+	height:1em;
+	padding:5px 5px 5px 0.5em;
+	text-decoration:none; 
+	/* white-azure */
+	border-left:8px solid #f0ffff;
+	/* darkgrey */
+	border-right:2px solid #a9a9a9;
+	color:orange; 
+	font:bold italic large serif;
+	text-align:center;
+}
+/*------------Title------------*/
+#header{
+	width:100%;
+	height:50px;
+	color:snow;
+}
+#header h2{		
+	text-align:center;
+	color:#838b8b;
+/* 水平偏移 垂直偏移 模糊值 阴影颜色 */
+	text-shadow: 0.3em 0.1em 5px orange;
+}

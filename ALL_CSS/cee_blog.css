@@ -1,9 +1,9 @@
-body{
-	padding:0px;
-	margin:0px;
-	font:16px "宋体";
-	background:#1C1C1C;
+#main{
+	margin-top:10px;
 }
 article{
-	color:orange;
+	background-color:#4f4f4f;
+}
+article ol{
+	font-style:italic;
 }

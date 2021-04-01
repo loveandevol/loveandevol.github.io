@@ -9,40 +9,52 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20210328.0/
-#header	ALL_CSS/main.css	/^#header{$/;"	i
-#main	ALL_CSS/main.css	/^#main{$/;"	i
-#main ul	ALL_CSS/main.css	/^#main ul{$/;"	s
-Cee-Blog	cee_blog.html	/^			Cee-Blog<\/h2>$/;"	i
+#header	ALL_CSS/uniform.css	/^#header{$/;"	i
+#header h2	ALL_CSS/uniform.css	/^#header h2{		$/;"	s
+#main	ALL_CSS/cee_blog.css	/^#main{$/;"	i
+#main	ALL_CSS/homework.css	/^#main{$/;"	i
+#main	ALL_CSS/index.css	/^#main{$/;"	i
+#main a	ALL_CSS/homework.css	/^#main a{$/;"	s
+#main p	ALL_CSS/homework.css	/^#main p{$/;"	s
+.auto_margin	ALL_CSS/uniform.css	/^.auto_margin{ margin:auto; }$/;"	c
+.each_language	ALL_CSS/homework.css	/^.each_language{$/;"	c
+.width_800	ALL_CSS/uniform.css	/^.width_800{ width:800px; }$/;"	c
+Cee-Blog	cee_blog.html	/^			<h2>Cee-Blog<\/h2>$/;"	i
 Circle	HomeWork/java/Circle.java	/^	Circle(){$/;"	m	class:Circle
 Circle	HomeWork/java/Circle.java	/^	Circle(double r){$/;"	m	class:Circle
 Circle	HomeWork/java/Circle.java	/^public class Circle{$/;"	c
 Fight	HomeWork/java/Fight.java	/^public class Fight{$/;"	c
 GetCircle	HomeWork/java/GetCircle.java	/^public class GetCircle{$/;"	c
-Hello Ceelia	index.html	/^				Hello Ceelia<\/h2>$/;"	i
+Hello Ceelia	index.html	/^			<h2>Hello Ceelia<\/h2>$/;"	i
+HomeWork	homework.html	/^			<h2>HomeWork<\/h2>$/;"	i
 Tank	HomeWork/java/Tank.java	/^public class Tank{$/;"	c
-a	ALL_CSS/navy.css	/^a{$/;"	s
-a:hover	ALL_CSS/navy.css	/^a:hover{$/;"	s
-a:visited	ALL_CSS/navy.css	/^a:visited{$/;"	s
 arr	HomeWork/python/chess.py	/^arr=np.zeros((8,8))$/;"	v
 article	ALL_CSS/cee_blog.css	/^article{$/;"	s
-body	ALL_CSS/cee_blog.css	/^body{$/;"	s
-body	ALL_CSS/main.css	/^body{$/;"	s
+article ol	ALL_CSS/cee_blog.css	/^article ol{$/;"	s
+body	ALL_CSS/uniform.css	/^body{$/;"	s
 bulletAmount	HomeWork/java/Tank.java	/^	int bulletAmount;$/;"	f	class:Tank
 fire	HomeWork/java/Tank.java	/^	void fire(){$/;"	m	class:Tank
-footer	ALL_CSS/main.css	/^footer{$/;"	s
+footer	ALL_CSS/index.css	/^footer{$/;"	s
+footer address a	ALL_CSS/index.css	/^footer address a{$/;"	s
 getArea	HomeWork/java/Circle.java	/^	double getArea(){$/;"	m	class:Circle
 getBulletAmount	HomeWork/java/Tank.java	/^	int getBulletAmount(){$/;"	m	class:Tank
 getLength	HomeWork/java/Circle.java	/^	double getLength(){$/;"	m	class:Circle
 getSpeed	HomeWork/java/Tank.java	/^	double getSpeed(){$/;"	m	class:Tank
-header	index.html	/^		<div id="header" class="">$/;"	I
+header	cee_blog.html	/^		<div id="header" class="">$/;"	I
+header	homework.html	/^		<div id="header">$/;"	I
+header	index.html	/^		<div id="header">$/;"	I
 main	HomeWork/java/Fight.java	/^	public static void main(String args[]){$/;"	m	class:Fight
 main	HomeWork/java/GetCircle.java	/^	public static void main(String args[]){$/;"	m	class:GetCircle
-main	index.html	/^		<div id="main">$/;"	I
+main	cee_blog.html	/^		<div id="main">$/;"	I
+main	homework.html	/^		<div id="main" class="width_800 auto_margin">$/;"	I
+main	index.html	/^		<div id="main" class="width_800 auto_margin">$/;"	I
+nav	ALL_CSS/uniform.css	/^nav{$/;"	s
+nav ul	ALL_CSS/uniform.css	/^nav ul{$/;"	s
+nav ul li	ALL_CSS/uniform.css	/^nav ul li{$/;"	s
+nav ul li a	ALL_CSS/uniform.css	/^nav ul li a{ $/;"	s
 np	HomeWork/python/chess.py	/^import numpy as np$/;"	I	nameref:module:numpy
-p1	cee_blog.html	/^			<h4 id="p1">I\/O重定向<\/h4>$/;"	I
 radius	HomeWork/java/Circle.java	/^	double radius;$/;"	f	class:Circle
 setBulletAmount	HomeWork/java/Tank.java	/^	void setBulletAmount(int m){$/;"	m	class:Tank
 speed	HomeWork/java/Tank.java	/^	double speed;$/;"	f	class:Tank
 speedDown	HomeWork/java/Tank.java	/^	void speedDown(int d){$/;"	m	class:Tank
 speedUp	HomeWork/java/Tank.java	/^	void speedUp(int s){$/;"	m	class:Tank
-ul	ALL_CSS/navy.css	/^ul{$/;"	s
