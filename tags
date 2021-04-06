@@ -28,7 +28,13 @@ GetCircle	HomeWork/java/GetCircle.java	/^public class GetCircle{$/;"	c
 Hello Ceelia	index.html	/^			<h2>Hello Ceelia<\/h2>$/;"	i
 HomeWork	homework.html	/^			<h2>HomeWork<\/h2>$/;"	i
 Tank	HomeWork/java/Tank.java	/^public class Tank{$/;"	c
-arr	HomeWork/python/chess.py	/^arr=np.zeros((8,8))$/;"	v
+arr	HomeWork/python/chess.py	/^arr = np.zeros((8,8))$/;"	v
+arr1	HomeWork/python/test5.py	/^arr1 = np.arange(12).reshape(4,3)$/;"	v
+arr1	HomeWork/python/test5.py	/^arr1 = np.array([1,2,3,4])$/;"	v
+arr2	HomeWork/python/test5.py	/^arr2 = np.arange(12).reshape(4,3)$/;"	v
+arr2	HomeWork/python/test5.py	/^arr2 = np.array([5,6,7,8])$/;"	v
+arr3	HomeWork/python/test5.py	/^arr3 = np.array([[1,2,3,4],[4,5,6,7],[7,8,9,10]])$/;"	v
+arr9	HomeWork/python/test5.py	/^arr9 = np.array([1,1,5,7,2,8,4])$/;"	v
 article	ALL_CSS/cee_blog.css	/^article{$/;"	s
 article ol	ALL_CSS/cee_blog.css	/^article ol{$/;"	s
 body	ALL_CSS/uniform.css	/^body{$/;"	s
@@ -53,6 +59,7 @@ nav ul	ALL_CSS/uniform.css	/^nav ul{$/;"	s
 nav ul li	ALL_CSS/uniform.css	/^nav ul li{$/;"	s
 nav ul li a	ALL_CSS/uniform.css	/^nav ul li a{ $/;"	s
 np	HomeWork/python/chess.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	HomeWork/python/test5.py	/^import numpy as np$/;"	I	nameref:module:numpy
 radius	HomeWork/java/Circle.java	/^	double radius;$/;"	f	class:Circle
 setBulletAmount	HomeWork/java/Tank.java	/^	void setBulletAmount(int m){$/;"	m	class:Tank
 speed	HomeWork/java/Tank.java	/^	double speed;$/;"	f	class:Tank
