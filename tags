@@ -20,14 +20,21 @@
 .each_language	ALL_CSS/homework.css	/^.each_language{$/;"	c
 .width_800	ALL_CSS/uniform.css	/^.width_800{ width:800px; }$/;"	c
 Cee-Blog	cee_blog.html	/^			<h2>Cee-Blog<\/h2>$/;"	i
-Circle	HomeWork/java/Circle.java	/^	Circle(){$/;"	m	class:Circle
-Circle	HomeWork/java/Circle.java	/^	Circle(double r){$/;"	m	class:Circle
-Circle	HomeWork/java/Circle.java	/^public class Circle{$/;"	c
-Fight	HomeWork/java/Fight.java	/^public class Fight{$/;"	c
-GetCircle	HomeWork/java/GetCircle.java	/^public class GetCircle{$/;"	c
+Circle	HomeWork/java/test4/Circle.java	/^	Circle(){$/;"	m	class:Circle
+Circle	HomeWork/java/test4/Circle.java	/^	Circle(double r){$/;"	m	class:Circle
+Circle	HomeWork/java/test4/Circle.java	/^public class Circle{$/;"	c
+Fight	HomeWork/java/test4/Fight.java	/^public class Fight{$/;"	c
+GetCircle	HomeWork/java/test4/GetCircle.java	/^public class GetCircle{$/;"	c
 Hello Ceelia	index.html	/^			<h2>Hello Ceelia<\/h2>$/;"	i
 HomeWork	homework.html	/^			<h2>HomeWork<\/h2>$/;"	i
-Tank	HomeWork/java/Tank.java	/^public class Tank{$/;"	c
+MainClass	HomeWork/java/test5/001/MainClass.java	/^public class MainClass{$/;"	c
+MainClass	HomeWork/java/test5/002/MainClass.java	/^public class MainClass{$/;"	c
+School	HomeWork/java/test5/001/School.java	/^public class School{$/;"	c
+Tank	HomeWork/java/test4/Tank.java	/^public class Tank{$/;"	c
+Teacher	HomeWork/java/test5/001/Teacher.java	/^public class Teacher{$/;"	c
+Village	HomeWork/java/test5/002/Village.java	/^	Village(String s){$/;"	m	class:Village
+Village	HomeWork/java/test5/002/Village.java	/^class Village{$/;"	c
+addPeopleNumber	HomeWork/java/test5/002/Village.java	/^	void addPeopleNumber(int n){$/;"	m	class:Village
 arr	HomeWork/python/chess.py	/^arr = np.zeros((8,8))$/;"	v
 arr1	HomeWork/python/test5.py	/^arr1 = np.arange(12).reshape(4,3)$/;"	v
 arr1	HomeWork/python/test5.py	/^arr1 = np.array([1,2,3,4])$/;"	v
@@ -38,30 +45,46 @@ arr9	HomeWork/python/test5.py	/^arr9 = np.array([1,1,5,7,2,8,4])$/;"	v
 article	ALL_CSS/cee_blog.css	/^article{$/;"	s
 article ol	ALL_CSS/cee_blog.css	/^article ol{$/;"	s
 body	ALL_CSS/uniform.css	/^body{$/;"	s
-bulletAmount	HomeWork/java/Tank.java	/^	int bulletAmount;$/;"	f	class:Tank
-fire	HomeWork/java/Tank.java	/^	void fire(){$/;"	m	class:Tank
+bulletAmount	HomeWork/java/test4/Tank.java	/^	int bulletAmount;$/;"	f	class:Tank
+fellTree	HomeWork/java/test5/002/Village.java	/^	void fellTree(int n){$/;"	m	class:Village
+fire	HomeWork/java/test4/Tank.java	/^	void fire(){$/;"	m	class:Tank
 footer	ALL_CSS/index.css	/^footer{$/;"	s
 footer address a	ALL_CSS/index.css	/^footer address a{$/;"	s
-getArea	HomeWork/java/Circle.java	/^	double getArea(){$/;"	m	class:Circle
-getBulletAmount	HomeWork/java/Tank.java	/^	int getBulletAmount(){$/;"	m	class:Tank
-getLength	HomeWork/java/Circle.java	/^	double getLength(){$/;"	m	class:Circle
-getSpeed	HomeWork/java/Tank.java	/^	double getSpeed(){$/;"	m	class:Tank
+getArea	HomeWork/java/test4/Circle.java	/^	double getArea(){$/;"	m	class:Circle
+getBulletAmount	HomeWork/java/test4/Tank.java	/^	int getBulletAmount(){$/;"	m	class:Tank
+getLength	HomeWork/java/test4/Circle.java	/^	double getLength(){$/;"	m	class:Circle
+getSpeed	HomeWork/java/test4/Tank.java	/^	double getSpeed(){$/;"	m	class:Tank
 header	cee_blog.html	/^		<div id="header" class="">$/;"	I
 header	homework.html	/^		<div id="header">$/;"	I
 header	index.html	/^		<div id="header">$/;"	I
-main	HomeWork/java/Fight.java	/^	public static void main(String args[]){$/;"	m	class:Fight
-main	HomeWork/java/GetCircle.java	/^	public static void main(String args[]){$/;"	m	class:GetCircle
+lookTreeAmount	HomeWork/java/test5/002/Village.java	/^	static int lookTreeAmount(){$/;"	m	class:Village
+main	HomeWork/java/test4/Fight.java	/^	public static void main(String args[]){$/;"	m	class:Fight
+main	HomeWork/java/test4/GetCircle.java	/^	public static void main(String args[]){$/;"	m	class:GetCircle
+main	HomeWork/java/test5/001/MainClass.java	/^	public static void main(String args[]){$/;"	m	class:MainClass
+main	HomeWork/java/test5/002/MainClass.java	/^	public static void main(String args[]){$/;"	m	class:MainClass
 main	cee_blog.html	/^		<div id="main">$/;"	I
 main	homework.html	/^		<div id="main" class="width_800 auto_margin">$/;"	I
 main	index.html	/^		<div id="main" class="width_800 auto_margin">$/;"	I
+mathTeacher	HomeWork/java/test5/001/School.java	/^	Teacher mathTeacher, musicTeacher;$/;"	f	class:School
+musicTeacher	HomeWork/java/test5/001/School.java	/^	Teacher mathTeacher, musicTeacher;$/;"	f	class:School
+name	HomeWork/java/test5/002/Village.java	/^	String name;$/;"	f	class:Village
 nav	ALL_CSS/uniform.css	/^nav{$/;"	s
 nav ul	ALL_CSS/uniform.css	/^nav ul{$/;"	s
 nav ul li	ALL_CSS/uniform.css	/^nav ul li{$/;"	s
 nav ul li a	ALL_CSS/uniform.css	/^nav ul li a{ $/;"	s
 np	HomeWork/python/chess.py	/^import numpy as np$/;"	I	nameref:module:numpy
 np	HomeWork/python/test5.py	/^import numpy as np$/;"	I	nameref:module:numpy
-radius	HomeWork/java/Circle.java	/^	double radius;$/;"	f	class:Circle
-setBulletAmount	HomeWork/java/Tank.java	/^	void setBulletAmount(int m){$/;"	m	class:Tank
-speed	HomeWork/java/Tank.java	/^	double speed;$/;"	f	class:Tank
-speedDown	HomeWork/java/Tank.java	/^	void speedDown(int d){$/;"	m	class:Tank
-speedUp	HomeWork/java/Tank.java	/^	void speedUp(int s){$/;"	m	class:Tank
+ol li	ALL_CSS/homework.css	/^ol li{$/;"	s
+peopleNumber	HomeWork/java/test5/002/Village.java	/^	int peopleNumber;$/;"	f	class:Village
+radius	HomeWork/java/test4/Circle.java	/^	double radius;$/;"	f	class:Circle
+setBulletAmount	HomeWork/java/test4/Tank.java	/^	void setBulletAmount(int m){$/;"	m	class:Tank
+setTeacher	HomeWork/java/test5/001/School.java	/^	void setTeacher(Teacher t1, Teacher t2){$/;"	m	class:School
+speed	HomeWork/java/test4/Tank.java	/^	double speed;$/;"	f	class:Tank
+speedDown	HomeWork/java/test4/Tank.java	/^	void speedDown(int d){$/;"	m	class:Tank
+speedUp	HomeWork/java/test4/Tank.java	/^	void speedUp(int s){$/;"	m	class:Tank
+speek	HomeWork/java/test5/001/Teacher.java	/^	public void speek(){$/;"	m	class:Teacher
+startMathLesson	HomeWork/java/test5/001/School.java	/^	void startMathLesson(){$/;"	m	class:School
+startmusicLesson	HomeWork/java/test5/001/School.java	/^	void startmusicLesson(){$/;"	m	class:School
+teacherType	HomeWork/java/test5/001/Teacher.java	/^	int teacherType;$/;"	f	class:Teacher
+treeAmount	HomeWork/java/test5/002/Village.java	/^	static int treeAmount;$/;"	f	class:Village
+treePlanting	HomeWork/java/test5/002/Village.java	/^	void treePlanting(int n){$/;"	m	class:Village
