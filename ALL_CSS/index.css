@@ -1,7 +1,58 @@
+#left{
+	float:left;
+}
 #main{
 	height:300px;
 	padding-top:40px;
 }                            
+/* ------------------bubble bubble-left --------------------- */
+.bubble{
+	width:200px; height:50px;
+	color:hsl(120, 100%, 0%);
+	background:hsl(30, 100%, 50%);
+	padding:12px;
+	position:relative;
+	left:60px;
+	top:30px;
+	border-radius:8px;
+}
+.bubble:before{
+	content:"";
+	width:0; height:0;
+	position: absolute;
+	z-index:-1;
+}
+.bubble.bubble-left:before{
+	/* 调整箭头位置 */
+	right:90%; top:50%;
+	/* define箭头倾斜角度 */
+	transform:rotate(-25deg);
+	/* define箭头长短 */
+	border-top:solid 20px transparent;
+	border-right:solid 80px hsla(30, 100%, 50%);
+	border-bottom:solid 20px transparent;
+}
+/* ------------------table style--------------------- */
+table{border:solid 1px grey; padding:3px;}
+th{
+	color: hsl(30, 100%, 50%);
+	font-size:15px;
+	font-weight:normal;
+	padding:5px;
+}
+td{
+	width:100px;
+	height:20px;
+	padding:5px;
+}
+tr:nth-child(2), tr:nth-child(5){
+	background: hsla(30, 50%, 50%, .3);
+}
+/* ------------------progress style--------------------- */
+progress{
+	margin:0px 0px 0px 20px;
+}
+/* ------------------footer style--------------------- */
 footer{
 	height:70px;
 	font-family:sans-serif;

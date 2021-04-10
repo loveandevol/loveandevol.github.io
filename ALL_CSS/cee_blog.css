@@ -1,9 +1,35 @@
 #main{
 	margin-top:10px;
 }
+/* ------------------article style--------------------- */
 article{
 	background-color:#4f4f4f;
 }
 article ol{
 	font-style:italic;
+}
+/* ------------------form style--------------------- */
+.form {/* define 表单框样式 */
+	height:50px;
+	margin:30px; auto;
+	border:solid 2px;
+	border-radius:5px;
+	box-shadow:0 0 5px red;
+}
+.form input[type=text]{/* define 表单对象样式 */
+	width:100%;
+	height:100%;
+	padding:0px;
+	border:none;
+	background:rgba(255,255,255,0.2);
+	box-shadow:inset 0 0 10px rgba(255,255,255,0.5);
+	/* font style */
+	text-indent:10px;
+	color:hsla(0,0%,100%,0.9);
+	font:normal 18px/100% Verdana, Tahoma, sans-serif;
+}
+.form input[type=text]:hover,
+.form input[type=text]:focus{
+	background:rgba(255,255,255,0.4);
+	outline:0;
 }

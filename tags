@@ -11,13 +11,24 @@
 !_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20210328.0/
 #header	ALL_CSS/uniform.css	/^#header{$/;"	i
 #header h2	ALL_CSS/uniform.css	/^#header h2{		$/;"	s
+#left	ALL_CSS/index.css	/^#left{$/;"	i
 #main	ALL_CSS/cee_blog.css	/^#main{$/;"	i
 #main	ALL_CSS/homework.css	/^#main{$/;"	i
 #main	ALL_CSS/index.css	/^#main{$/;"	i
 #main a	ALL_CSS/homework.css	/^#main a{$/;"	s
 #main p	ALL_CSS/homework.css	/^#main p{$/;"	s
 .auto_margin	ALL_CSS/uniform.css	/^.auto_margin{ margin:auto; }$/;"	c
+.bubble	ALL_CSS/index.css	/^.bubble{$/;"	c
+.bubble.bubble-left:before	ALL_CSS/index.css	/^.bubble.bubble-left:before{$/;"	c
+.bubble:before	ALL_CSS/index.css	/^.bubble:before{$/;"	c
 .each_language	ALL_CSS/homework.css	/^.each_language{$/;"	c
+.form	ALL_CSS/cee_blog.css	/^.form {\/* define 表单框样式 *\/$/;"	c
+.form input[type=text]	ALL_CSS/cee_blog.css	/^.form input[type=text]{\/* define 表单对象样式 *\/$/;"	s
+.form input[type=text] :focus	ALL_CSS/cee_blog.css	/^.form input[type=text]:focus{$/;"	s
+.form input[type=text] :hover	ALL_CSS/cee_blog.css	/^.form input[type=text]:hover,$/;"	s
+.icon	ALL_CSS/uniform.css	/^.icon{$/;"	c
+.icon1	ALL_CSS/uniform.css	/^.icon1{$/;"	c
+.icon2	ALL_CSS/uniform.css	/^.icon2{$/;"	c
 .width_800	ALL_CSS/uniform.css	/^.width_800{ width:800px; }$/;"	c
 Cee-Blog	cee_blog.html	/^			<h2>Cee-Blog<\/h2>$/;"	i
 Circle	HomeWork/java/test4/Circle.java	/^	Circle(){$/;"	m	class:Circle
@@ -57,17 +68,19 @@ getSpeed	HomeWork/java/test4/Tank.java	/^	double getSpeed(){$/;"	m	class:Tank
 header	cee_blog.html	/^		<div id="header" class="">$/;"	I
 header	homework.html	/^		<div id="header">$/;"	I
 header	index.html	/^		<div id="header">$/;"	I
+left	index.html	/^		<div id="left" class="bubble bubble-left">$/;"	I
 lookTreeAmount	HomeWork/java/test5/002/Village.java	/^	static int lookTreeAmount(){$/;"	m	class:Village
 main	HomeWork/java/test4/Fight.java	/^	public static void main(String args[]){$/;"	m	class:Fight
 main	HomeWork/java/test4/GetCircle.java	/^	public static void main(String args[]){$/;"	m	class:GetCircle
 main	HomeWork/java/test5/001/MainClass.java	/^	public static void main(String args[]){$/;"	m	class:MainClass
 main	HomeWork/java/test5/002/MainClass.java	/^	public static void main(String args[]){$/;"	m	class:MainClass
-main	cee_blog.html	/^		<div id="main">$/;"	I
+main	cee_blog.html	/^		<div id="main" class="width_800 auto_margin">$/;"	I
 main	homework.html	/^		<div id="main" class="width_800 auto_margin">$/;"	I
 main	index.html	/^		<div id="main" class="width_800 auto_margin">$/;"	I
 mathTeacher	HomeWork/java/test5/001/School.java	/^	Teacher mathTeacher, musicTeacher;$/;"	f	class:School
 musicTeacher	HomeWork/java/test5/001/School.java	/^	Teacher mathTeacher, musicTeacher;$/;"	f	class:School
 name	HomeWork/java/test5/002/Village.java	/^	String name;$/;"	f	class:Village
+name	cee_blog.html	/^					<input type="text" name="name" id="name" placeholder="..."\/>$/;"	I
 nav	ALL_CSS/uniform.css	/^nav{$/;"	s
 nav ul	ALL_CSS/uniform.css	/^nav ul{$/;"	s
 nav ul li	ALL_CSS/uniform.css	/^nav ul li{$/;"	s
@@ -76,6 +89,7 @@ np	HomeWork/python/chess.py	/^import numpy as np$/;"	I	nameref:module:numpy
 np	HomeWork/python/test5.py	/^import numpy as np$/;"	I	nameref:module:numpy
 ol li	ALL_CSS/homework.css	/^ol li{$/;"	s
 peopleNumber	HomeWork/java/test5/002/Village.java	/^	int peopleNumber;$/;"	f	class:Village
+progress	ALL_CSS/index.css	/^progress{$/;"	s
 radius	HomeWork/java/test4/Circle.java	/^	double radius;$/;"	f	class:Circle
 setBulletAmount	HomeWork/java/test4/Tank.java	/^	void setBulletAmount(int m){$/;"	m	class:Tank
 setTeacher	HomeWork/java/test5/001/School.java	/^	void setTeacher(Teacher t1, Teacher t2){$/;"	m	class:School
@@ -85,6 +99,11 @@ speedUp	HomeWork/java/test4/Tank.java	/^	void speedUp(int s){$/;"	m	class:Tank
 speek	HomeWork/java/test5/001/Teacher.java	/^	public void speek(){$/;"	m	class:Teacher
 startMathLesson	HomeWork/java/test5/001/School.java	/^	void startMathLesson(){$/;"	m	class:School
 startmusicLesson	HomeWork/java/test5/001/School.java	/^	void startmusicLesson(){$/;"	m	class:School
+table	ALL_CSS/index.css	/^table{border:solid 1px grey; padding:3px;}$/;"	s
+td	ALL_CSS/index.css	/^td{$/;"	s
 teacherType	HomeWork/java/test5/001/Teacher.java	/^	int teacherType;$/;"	f	class:Teacher
+th	ALL_CSS/index.css	/^th{$/;"	s
+tr:nth-child(2)	ALL_CSS/index.css	/^tr:nth-child(2), tr:nth-child(5){$/;"	s
+tr:nth-child(5)	ALL_CSS/index.css	/^tr:nth-child(2), tr:nth-child(5){$/;"	s
 treeAmount	HomeWork/java/test5/002/Village.java	/^	static int treeAmount;$/;"	f	class:Village
 treePlanting	HomeWork/java/test5/002/Village.java	/^	void treePlanting(int n){$/;"	m	class:Village
