@@ -56,4 +56,6 @@ nav ul li a{
 }
 #header h2{		
 	text-align:center;
+	text-shadow:5px 5px 4px orange;
 	color:#838b8b;
+}
