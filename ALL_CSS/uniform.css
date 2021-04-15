@@ -21,31 +21,27 @@ nav ul{
 nav ul li{
 	/* white-azure */
 	border-bottom:1px solid #f0ffff;
+	border-left:8px solid #f0ffff;
 	width:200px;
 	float:left;
+}
+nav ul li:nth-child(3){
+	border-right:8px solid #f0ffff;
+}
+nav ul li:hover{
+	background:hsl(30,30%,30%);
 }
 nav ul li a{ 
 	display:block;
 	height:1em;
 	padding:5px 5px 5px 0.5em;
 	text-decoration:none; 
-	/* white-azure */
-	border-left:8px solid #f0ffff;
-	/* darkgrey */
-	border-right:2px solid #a9a9a9;
 	color:orange; 
 	font:bold italic large serif;
 	text-align:center;
 }
-/*------------navi icon------------*/
-.icon{
-	display:inline-block;
-}
-.icon1{
-	background-image:url(Images/schedule.png);
-}
-.icon2{
-	background-image:url(Images/Blog.png);
+nav ul li a{
+	background:url(images/code.png);
 }
 /*------------Title------------*/
 #header{

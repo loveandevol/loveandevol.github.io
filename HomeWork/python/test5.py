@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import numpy as np
 #1.创建两个数组arr1 = [1,2,3,4]和arr2 = [5,6,7,8]，对这两个数组进行四则运算。\
 print("四则运算----------->>>")
@@ -22,11 +23,6 @@ print(np.dstack((arr1,arr2)))
 print("统计运算----------->>>")
 arr9 = np.array([1,1,5,7,2,8,4])
 arr9.sort()
-print(arr9)
-print(np.unique(arr9))
-print(np.sum(arr9))
-print(np.mean(arr9))
-print(np.std(arr9))
-print(np.var(arr9))
-print(np.min(arr9))
-print(np.max(arr9))
+print("排序后:", arr9, "\n", "去重:", np.unique(arr9), "\n", "总和:", np.sum(arr9), "\n",
+        "均值:", np.mean(arr9), "\n", "标准差:", np.std(arr9), "\n", "方差:", np.var(arr9), "\n",
+        "最小值:", np.min(arr9), "\n", "最大值:", np.max(arr9))

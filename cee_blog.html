@@ -19,38 +19,43 @@
 				<li><a href="./homework.html">Homework</a></li>
 			</ul>
 		</nav>
-		<!-- Main Part -->
-		<div id="main" class="width_800 auto_margin">
-			<form class="form">
+		<div id="contain">
+			<!-- Left Part -->
+			<div id="left">
+				<form class="form">
 					<input type="text" name="name" id="name" placeholder="..."/>
-			</form>
-			<article>
-				</br>
-				<h4>i/o重定向</h4>
-				<p>
-				程序运行会自从生成三个
-				<abbr title="一种与文件交互的接口"><i>文件描述符</i></abbr>
-				(<abbr title="file description">fildes</abbr>):0,1,2;
-				分别是:stdin,stdout,stderr.
-				可以通过open()函数接口进行<i>文件描述符</i>与文件的关联,
-				也就是将fildes定向到某个文件.
-				stdout与stderr很特殊,它们定向到同一个文件(终端显示器).
-				建立关联(或称定向到某个文件)后就可以通过fildes来操作已打开的文件.
-				open()返回相应的fildes,如出错返回-1.
-				fildes遵循最小递增原则:如果多次调用那么第一次返回3,第二次返回4...
-				所谓重定向就是在文件被打开后,
-				将相应的fildes重新定向到某个其他的文件.
-				一般会将输出到屏幕的字符定向到一个普通文件中作保留.
-				重定向使得程序具有了灵活性,其具体流程为:
-				</p>
-				<ol>
-					<li>打开a文件,返回一个fildesa(假如是3)</li>
-					<li>当我不想将操作流向a文件,希望流向b文件或是终端显示器</li>
-					<li>复制(dup)现有b文件的<i>文件描述符</i>返回fildesb</li>
-					<li>在将fildesb复制为(dup2)fildesa</li>
-				</ol>
-				此时在操作fildesa的话,不再影响a文件而是影响b文件
-			</article>
+				</form>
+			</div>
+			<!-- Main Part -->
+			<div id="main" class="width_800 auto_margin">
+				<article>
+					</br>
+					<h4>i/o重定向</h4>
+					<p>
+					程序运行会自从生成三个
+					<abbr title="一种与文件交互的接口"><i>文件描述符</i></abbr>
+					(<abbr title="file description">fildes</abbr>):0,1,2;
+					分别是:stdin,stdout,stderr.
+					可以通过open()函数接口进行<i>文件描述符</i>与文件的关联,
+					也就是将fildes定向到某个文件.
+					stdout与stderr很特殊,它们定向到同一个文件(终端显示器).
+					建立关联(或称定向到某个文件)后就可以通过fildes来操作已打开的文件.
+					open()返回相应的fildes,如出错返回-1.
+					fildes遵循最小递增原则:如果多次调用那么第一次返回3,第二次返回4...
+					所谓重定向就是在文件被打开后,
+					将相应的fildes重新定向到某个其他的文件.
+					一般会将输出到屏幕的字符定向到一个普通文件中作保留.
+					重定向使得程序具有了灵活性,其具体流程为:
+					</p>
+					<ol>
+						<li>打开a文件,返回一个fildesa(假如是3)</li>
+						<li>当我不想将操作流向a文件,希望流向b文件或是终端显示器</li>
+						<li>复制(dup)现有b文件的<i>文件描述符</i>返回fildesb</li>
+						<li>在将fildesb复制为(dup2)fildesa</li>
+					</ol>
+					此时在操作fildesa的话,不再影响a文件而是影响b文件
+				</article>
+			</div>
 		</div>
 	</body>
 </html>

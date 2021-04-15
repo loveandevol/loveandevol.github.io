@@ -1,20 +1,31 @@
+#contain{
+	margin-top:20px;
+}
+#left{
+	float:left;
+	width:300px;
+	border:solid 1px;
+}
 #main{
-	margin-top:10px;
+	margin-left:30px;
+	padding:30px;
+	width:400px;
+	border:solid 1px;
+	float:left;
 }
 /* ------------------article style--------------------- */
 article{
+	padding:30px;
 	background-color:#4f4f4f;
+	color:white;
 }
 article ol{
 	font-style:italic;
 }
 /* ------------------form style--------------------- */
 .form {/* define 表单框样式 */
-	height:50px;
+	height:30px;
 	margin:30px; auto;
-	border:solid 2px;
-	border-radius:5px;
-	box-shadow:0 0 5px red;
 }
 .form input[type=text]{/* define 表单对象样式 */
 	width:100%;
@@ -31,5 +42,8 @@ article ol{
 .form input[type=text]:hover,
 .form input[type=text]:focus{
 	background:rgba(255,255,255,0.4);
-	outline:0;
+	outline:none;
+	border:solid 2px;
+	border-radius:5px;
+	box-shadow:0 0 5px red;
 }
