@@ -1,4 +1,5 @@
 #!/usr/bin/python
+
 import numpy as np
 print("--------0-1 array---------->>>")
 print(np.arange(0,1,0.01))

@@ -1,4 +1,5 @@
 #!/usr/bin/python
+
 import numpy as np
 #1.创建两个数组arr1 = [1,2,3,4]和arr2 = [5,6,7,8]，对这两个数组进行四则运算。\
 print("四则运算----------->>>")

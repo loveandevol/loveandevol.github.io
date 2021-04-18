@@ -35,6 +35,11 @@ Cee-Blog	cee_blog.html	/^            <h2>Cee-Blog<\/h2>$/;"	i
 Circle	HomeWork/java/test4/Circle.java	/^	Circle(){$/;"	m	class:Circle
 Circle	HomeWork/java/test4/Circle.java	/^	Circle(double r){$/;"	m	class:Circle
 Circle	HomeWork/java/test4/Circle.java	/^public class Circle{$/;"	c
+DF_data	HomeWork/python/test6.py	/^DF_data=pd.DataFrame(data)$/;"	v
+DF_detail	HomeWork/python/test6.py	/^DF_detail=pd.DataFrame(detail)$/;"	v
+DF_meal_info	HomeWork/python/test6.py	/^DF_meal_info=pd.DataFrame(meal_info)$/;"	v
+DF_newdetail1	HomeWork/python/test6.py	/^DF_newdetail1=pd.DataFrame(newdetail1)$/;"	v
+DF_users	HomeWork/python/test6.py	/^DF_users=pd.DataFrame(users)$/;"	v
 Employee	HomeWork/java/test6/001/Employee.java	/^	Employee($/;"	m	class:Employee
 Employee	HomeWork/java/test6/001/Employee.java	/^public class Employee{$/;"	c
 Fight	HomeWork/java/test4/Fight.java	/^public class Fight{$/;"	c
@@ -70,9 +75,13 @@ article ol	ALL_CSS/cee_blog.css	/^article ol{$/;"	s
 body	ALL_CSS/uniform.css	/^body{$/;"	s
 bulletAmount	HomeWork/java/test4/Tank.java	/^	int bulletAmount;$/;"	f	class:Tank
 classes	HomeWork/java/test6/002/Student.java	/^	String classes;$/;"	f	class:Student
+connection	HomeWork/python/test6.py	/^connection=MySQLdb.connect("localhost","root","14cwang0","cee_info")$/;"	v
 contain	cee_blog.html	/^        <div id="contain">$/;"	I
+data	HomeWork/python/test6.py	/^data=pd.read_sql("SELECT * FROM meal_order_detail1",con=connection)$/;"	v
 database	HomeWork/java/test6/001/Programmer.java	/^	String database;$/;"	f	class:Programmer
+detail	HomeWork/python/test6.py	/^detail=pd.read_csv('~\/data\/detail.csv')$/;"	v
 education	HomeWork/java/test6/001/Employee.java	/^	String education;$/;"	f	class:Employee
+engine	HomeWork/python/test6.py	/^engine=create_engine('mysql:\/\/root:14cwang0@localhost\/cee_info')$/;"	v
 fellTree	HomeWork/java/test5/002/Village.java	/^	void fellTree(int n){$/;"	m	class:Village
 fire	HomeWork/java/test4/Tank.java	/^	void fire(){$/;"	m	class:Tank
 footer	ALL_CSS/index.css	/^footer{$/;"	s
@@ -99,7 +108,7 @@ main	homework.html	/^        <div id="main" class="width_800 auto_margin">$/;"	I
 main	index.html	/^        <div id="main" class="width_800 auto_margin">$/;"	I
 major	HomeWork/java/test6/002/Student.java	/^	String major;$/;"	f	class:Student
 mathTeacher	HomeWork/java/test5/001/School.java	/^	Teacher mathTeacher, musicTeacher;$/;"	f	class:School
-meal_info	HomeWork/python/test6.py	/^meal_info=pd.read_csv("data\/meal_order_info.csv")$/;"	v
+meal_info	HomeWork/python/test6.py	/^meal_info=pd.read_csv("~\/data\/meal_order_info.csv",encoding='gbk')$/;"	v
 musicTeacher	HomeWork/java/test5/001/School.java	/^	Teacher mathTeacher, musicTeacher;$/;"	f	class:School
 name	HomeWork/java/test5/002/Village.java	/^	String name;$/;"	f	class:Village
 name	HomeWork/java/test6/001/Employee.java	/^	String name;$/;"	f	class:Employee
@@ -112,6 +121,8 @@ nav ul li a	ALL_CSS/uniform.css	/^nav ul li a{ $/;"	s
 nav ul li a	ALL_CSS/uniform.css	/^nav ul li a{$/;"	s
 nav ul li:hover	ALL_CSS/uniform.css	/^nav ul li:hover{$/;"	s
 nav ul li:nth-child(4)	ALL_CSS/uniform.css	/^nav ul li:nth-child(4){$/;"	s
+newdetail1	HomeWork/python/test6.py	/^newdetail1=detail.replace(detail['counts'].max(),detail['counts'].mean())$/;"	v
+newdetail1	HomeWork/python/test6.py	/^newdetail1=newdetail1.replace(newdetail1['amounts'].max(),newdetail1['amounts'].mean())$/;"	v
 np	HomeWork/python/test4.py	/^import numpy as np$/;"	I	nameref:module:numpy
 np	HomeWork/python/test5.py	/^import numpy as np$/;"	I	nameref:module:numpy
 ol li	ALL_CSS/homework.css	/^ol li{$/;"	s
@@ -143,4 +154,4 @@ tr:nth-child(2)	ALL_CSS/index.css	/^tr:nth-child(2), tr:nth-child(5){$/;"	s
 tr:nth-child(5)	ALL_CSS/index.css	/^tr:nth-child(2), tr:nth-child(5){$/;"	s
 treeAmount	HomeWork/java/test5/002/Village.java	/^	static int treeAmount;$/;"	f	class:Village
 treePlanting	HomeWork/java/test5/002/Village.java	/^	void treePlanting(int n){$/;"	m	class:Village
-users	HomeWork/python/test6.py	/^users=pd.read_excel( ".\/data\/users.xlsx")$/;"	v
+users	HomeWork/python/test6.py	/^users=pd.read_excel("~\/data\/users.xlsx")$/;"	v
