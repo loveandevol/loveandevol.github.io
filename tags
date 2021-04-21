@@ -22,27 +22,33 @@
 #progre	ALL_CSS/index.css	/^#progre{$/;"	i
 .auto_margin	ALL_CSS/uniform.css	/^.auto_margin{ margin:auto; }$/;"	c
 .bit_title	ALL_CSS/index.css	/^.bit_title{$/;"	c
-.bubble	ALL_CSS/index.css	/^.bubble{$/;"	c
-.bubble.bubble-left:before	ALL_CSS/index.css	/^.bubble.bubble-left:before{$/;"	c
-.bubble:before	ALL_CSS/index.css	/^.bubble:before{$/;"	c
 .each_language	ALL_CSS/homework.css	/^.each_language{$/;"	c
 .form	ALL_CSS/cee_blog.css	/^.form {\/* define 表单框样式 *\/$/;"	c
 .form input[type=text]	ALL_CSS/cee_blog.css	/^.form input[type=text]{\/* define 表单对象样式 *\/$/;"	s
 .form input[type=text] :focus	ALL_CSS/cee_blog.css	/^.form input[type=text]:focus{$/;"	s
 .form input[type=text] :hover	ALL_CSS/cee_blog.css	/^.form input[type=text]:hover,$/;"	s
 .width_800	ALL_CSS/uniform.css	/^.width_800{ width:800px; }$/;"	c
+Animal	HomeWork/java/test7/001/Animal.java	/^class Animal{$/;"	c
+Cat	HomeWork/java/test7/001/Cat.java	/^    Cat(){$/;"	m	class:Cat
+Cat	HomeWork/java/test7/001/Cat.java	/^    Cat(String s){$/;"	m	class:Cat
+Cat	HomeWork/java/test7/001/Cat.java	/^class Cat extends Animal{$/;"	c
 Cee-Blog	cee_blog.html	/^            <h2>Cee-Blog<\/h2>$/;"	i
 Circle	HomeWork/java/test4/Circle.java	/^	Circle(){$/;"	m	class:Circle
 Circle	HomeWork/java/test4/Circle.java	/^	Circle(double r){$/;"	m	class:Circle
 Circle	HomeWork/java/test4/Circle.java	/^public class Circle{$/;"	c
+Circle	HomeWork/java/test7/002/Circle.java	/^    Circle(double r){$/;"	m	class:Circle
+Circle	HomeWork/java/test7/002/Circle.java	/^public class Circle extends Geometry{$/;"	c
 DF_data	HomeWork/python/test6.py	/^DF_data=pd.DataFrame(data)$/;"	v
 DF_detail	HomeWork/python/test6.py	/^DF_detail=pd.DataFrame(detail)$/;"	v
 DF_meal_info	HomeWork/python/test6.py	/^DF_meal_info=pd.DataFrame(meal_info)$/;"	v
 DF_newdetail1	HomeWork/python/test6.py	/^DF_newdetail1=pd.DataFrame(newdetail1)$/;"	v
 DF_users	HomeWork/python/test6.py	/^DF_users=pd.DataFrame(users)$/;"	v
+Dog	HomeWork/java/test7/001/Dog.java	/^    Dog(String s){$/;"	m	class:Dog
+Dog	HomeWork/java/test7/001/Dog.java	/^class Dog extends Animal{$/;"	c
 Employee	HomeWork/java/test6/001/Employee.java	/^	Employee($/;"	m	class:Employee
 Employee	HomeWork/java/test6/001/Employee.java	/^public class Employee{$/;"	c
 Fight	HomeWork/java/test4/Fight.java	/^public class Fight{$/;"	c
+Geometry	HomeWork/java/test7/002/Geometry.java	/^public abstract class Geometry{$/;"	c
 GetCircle	HomeWork/java/test4/GetCircle.java	/^public class GetCircle{$/;"	c
 Hello Ceelia	index.html	/^            <h2>Hello Ceelia<\/h2>$/;"	i
 HomeWork	homework.html	/^            <h2>HomeWork<\/h2>$/;"	i
@@ -50,19 +56,26 @@ MainClass	HomeWork/java/test5/001/MainClass.java	/^public class MainClass{$/;"	c
 MainClass	HomeWork/java/test5/002/MainClass.java	/^public class MainClass{$/;"	c
 MainClass	HomeWork/java/test6/001/MainClass.java	/^public class MainClass{$/;"	c
 MainClass	HomeWork/java/test6/002/MainClass.java	/^public class MainClass{$/;"	c
+MainClass	HomeWork/java/test7/001/MainClass.java	/^public class MainClass{$/;"	c
+MainClass	HomeWork/java/test7/002/MainClass.java	/^public class MainClass{$/;"	c
 Person	HomeWork/java/test6/002/Person.java	/^	Person(String name,char sex,int age){$/;"	m	class:Person
 Person	HomeWork/java/test6/002/Person.java	/^public class Person{$/;"	c
 Programmer	HomeWork/java/test6/001/Programmer.java	/^	Programmer( String name, $/;"	m	class:Programmer
 Programmer	HomeWork/java/test6/001/Programmer.java	/^public class Programmer extends Employee{$/;"	c
+Rect	HomeWork/java/test7/002/Rect.java	/^    Rect(double a,double b){$/;"	m	class:Rect
+Rect	HomeWork/java/test7/002/Rect.java	/^public class Rect extends Geometry{$/;"	c
 School	HomeWork/java/test5/001/School.java	/^public class School{$/;"	c
 Student	HomeWork/java/test6/002/Student.java	/^	Student(String name,$/;"	m	class:Student
 Student	HomeWork/java/test6/002/Student.java	/^public class Student extends Person{$/;"	c
+Student	HomeWork/java/test7/002/Student.java	/^public class Student{$/;"	c
 Tank	HomeWork/java/test4/Tank.java	/^public class Tank{$/;"	c
 Teacher	HomeWork/java/test5/001/Teacher.java	/^public class Teacher{$/;"	c
 Village	HomeWork/java/test5/002/Village.java	/^	Village(String s){$/;"	m	class:Village
 Village	HomeWork/java/test5/002/Village.java	/^class Village{$/;"	c
+a	HomeWork/java/test7/002/Rect.java	/^    double a,b;$/;"	f	class:Rect
 addPeopleNumber	HomeWork/java/test5/002/Village.java	/^	void addPeopleNumber(int n){$/;"	m	class:Village
 age	HomeWork/java/test6/002/Person.java	/^	int age;$/;"	f	class:Person
+area	HomeWork/java/test7/002/Student.java	/^    public double area(Geometry ...p){$/;"	m	class:Student
 arr	HomeWork/python/test4.py	/^arr = np.zeros((8,8))$/;"	v
 arr1	HomeWork/python/test5.py	/^arr1 = np.arange(12).reshape(4,3)$/;"	v
 arr1	HomeWork/python/test5.py	/^arr1 = np.array([1,2,3,4])$/;"	v
@@ -72,11 +85,16 @@ arr3	HomeWork/python/test5.py	/^arr3 = np.array([[1,2,3,4],[4,5,6,7],[7,8,9,10]]
 arr9	HomeWork/python/test5.py	/^arr9 = np.array([1,1,5,7,2,8,4])$/;"	v
 article	ALL_CSS/cee_blog.css	/^article{$/;"	s
 article ol	ALL_CSS/cee_blog.css	/^article ol{$/;"	s
+b	HomeWork/java/test7/002/Rect.java	/^    double a,b;$/;"	f	class:Rect
 body	ALL_CSS/uniform.css	/^body{$/;"	s
 bulletAmount	HomeWork/java/test4/Tank.java	/^	int bulletAmount;$/;"	f	class:Tank
 classes	HomeWork/java/test6/002/Student.java	/^	String classes;$/;"	f	class:Student
+climbUpTree	HomeWork/java/test7/001/Cat.java	/^    public void climbUpTree(){$/;"	m	class:Cat
 connection	HomeWork/python/test6.py	/^connection=MySQLdb.connect("localhost","root","14cwang0","cee_info")$/;"	v
 contain	cee_blog.html	/^        <div id="contain">$/;"	I
+cry	HomeWork/java/test7/001/Animal.java	/^    public void cry(){$/;"	m	class:Animal
+cry	HomeWork/java/test7/001/Cat.java	/^    public void cry(){$/;"	m	class:Cat
+cry	HomeWork/java/test7/001/Dog.java	/^    public void cry(){$/;"	m	class:Dog
 data	HomeWork/python/test6.py	/^data=pd.read_sql("SELECT * FROM meal_order_detail1",con=connection)$/;"	v
 database	HomeWork/java/test6/001/Programmer.java	/^	String database;$/;"	f	class:Programmer
 detail	HomeWork/python/test6.py	/^detail=pd.read_csv('~\/data\/detail.csv')$/;"	v
@@ -87,6 +105,9 @@ fire	HomeWork/java/test4/Tank.java	/^	void fire(){$/;"	m	class:Tank
 footer	ALL_CSS/index.css	/^footer{$/;"	s
 footer address a	ALL_CSS/index.css	/^footer address a{$/;"	s
 getArea	HomeWork/java/test4/Circle.java	/^	double getArea(){$/;"	m	class:Circle
+getArea	HomeWork/java/test7/002/Circle.java	/^    public double getArea(){$/;"	m	class:Circle
+getArea	HomeWork/java/test7/002/Geometry.java	/^    public abstract double getArea();$/;"	m	class:Geometry
+getArea	HomeWork/java/test7/002/Rect.java	/^    public double getArea(){$/;"	m	class:Rect
 getBulletAmount	HomeWork/java/test4/Tank.java	/^	int getBulletAmount(){$/;"	m	class:Tank
 getLength	HomeWork/java/test4/Circle.java	/^	double getLength(){$/;"	m	class:Circle
 getSpeed	HomeWork/java/test4/Tank.java	/^	double getSpeed(){$/;"	m	class:Tank
@@ -95,7 +116,7 @@ header	homework.html	/^        <div id="header">$/;"	I
 header	index.html	/^        <div id="header">$/;"	I
 inner	cee_blog.html	/^                <div id="inner">$/;"	I
 left	cee_blog.html	/^            <div id="left">$/;"	I
-left	index.html	/^        <div id="left" class="bubble bubble-left">$/;"	I
+left	index.html	/^        <div id="left" class="">$/;"	I
 lookTreeAmount	HomeWork/java/test5/002/Village.java	/^	static int lookTreeAmount(){$/;"	m	class:Village
 main	HomeWork/java/test4/Fight.java	/^	public static void main(String args[]){$/;"	m	class:Fight
 main	HomeWork/java/test4/GetCircle.java	/^	public static void main(String args[]){$/;"	m	class:GetCircle
@@ -103,6 +124,8 @@ main	HomeWork/java/test5/001/MainClass.java	/^	public static void main(String ar
 main	HomeWork/java/test5/002/MainClass.java	/^	public static void main(String args[]){$/;"	m	class:MainClass
 main	HomeWork/java/test6/001/MainClass.java	/^	public static void main(String args[]){$/;"	m	class:MainClass
 main	HomeWork/java/test6/002/MainClass.java	/^	public static void main(String args[]){$/;"	m	class:MainClass
+main	HomeWork/java/test7/001/MainClass.java	/^    public static void main(String args[]){$/;"	m	class:MainClass
+main	HomeWork/java/test7/002/MainClass.java	/^    public static void main(String args[]){$/;"	m	class:MainClass
 main	cee_blog.html	/^            <div id="main" class="width_800 auto_margin">$/;"	I
 main	homework.html	/^        <div id="main" class="width_800 auto_margin">$/;"	I
 main	index.html	/^        <div id="main" class="width_800 auto_margin">$/;"	I
@@ -113,6 +136,7 @@ musicTeacher	HomeWork/java/test5/001/School.java	/^	Teacher mathTeacher, musicTe
 name	HomeWork/java/test5/002/Village.java	/^	String name;$/;"	f	class:Village
 name	HomeWork/java/test6/001/Employee.java	/^	String name;$/;"	f	class:Employee
 name	HomeWork/java/test6/002/Person.java	/^	String name;$/;"	f	class:Person
+name	HomeWork/java/test7/001/Animal.java	/^    protected String name;$/;"	f	class:Animal
 name	cee_blog.html	/^                    <input type="text" name="name" id="name" placeholder="..."\/>$/;"	I
 nav	ALL_CSS/uniform.css	/^nav{$/;"	s
 nav ul	ALL_CSS/uniform.css	/^nav ul{$/;"	s
@@ -135,16 +159,19 @@ print_info	HomeWork/java/test6/002/Person.java	/^	void print_info(){$/;"	m	class
 print_info	HomeWork/java/test6/002/Student.java	/^	void print_info(){$/;"	m	class:Student
 prog_language	HomeWork/java/test6/001/Programmer.java	/^	String prog_language;$/;"	f	class:Programmer
 progre	index.html	/^            <div id="progre">$/;"	I
+r	HomeWork/java/test7/002/Circle.java	/^    double r;$/;"	f	class:Circle
 radius	HomeWork/java/test4/Circle.java	/^	double radius;$/;"	f	class:Circle
 setBulletAmount	HomeWork/java/test4/Tank.java	/^	void setBulletAmount(int m){$/;"	m	class:Tank
 setTeacher	HomeWork/java/test5/001/School.java	/^	void setTeacher(Teacher t1, Teacher t2){$/;"	m	class:School
 sex	HomeWork/java/test6/002/Person.java	/^	char sex;$/;"	f	class:Person
+showName	HomeWork/java/test7/001/Animal.java	/^    public void showName(){$/;"	m	class:Animal
 speed	HomeWork/java/test4/Tank.java	/^	double speed;$/;"	f	class:Tank
 speedDown	HomeWork/java/test4/Tank.java	/^	void speedDown(int d){$/;"	m	class:Tank
 speedUp	HomeWork/java/test4/Tank.java	/^	void speedUp(int s){$/;"	m	class:Tank
 speek	HomeWork/java/test5/001/Teacher.java	/^	public void speek(){$/;"	m	class:Teacher
 startMathLesson	HomeWork/java/test5/001/School.java	/^	void startMathLesson(){$/;"	m	class:School
 startmusicLesson	HomeWork/java/test5/001/School.java	/^	void startmusicLesson(){$/;"	m	class:School
+swimming	HomeWork/java/test7/001/Dog.java	/^    public void swimming(){$/;"	m	class:Dog
 table	ALL_CSS/index.css	/^table{$/;"	s
 table	index.html	/^            <div id="table">$/;"	I
 td	ALL_CSS/index.css	/^td{$/;"	s

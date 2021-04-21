@@ -6,33 +6,6 @@
 	padding-top:40px;
 	background:url(Images/code.png);
 }                            
-/* ------------------bubble bubble-left --------------------- */
-.bubble{
-	width:150px; height:30px;
-	color:hsl(120, 100%, 0%);
-	background:hsl(30, 100%, 50%);
-	padding:12px;
-	position:relative;
-	left:60px;
-	top:30px;
-	border-radius:8px;
-}
-.bubble:before{
-	content:"";
-	width:0; height:0;
-	position: absolute;
-	z-index:-1;
-}
-.bubble.bubble-left:before{
-	/* 调整箭头位置 */
-	right:90%; top:50%;
-	/* define箭头倾斜角度 */
-	transform:rotate(-25deg);
-	/* define箭头长短 */
-	border-top:solid 10px transparent;
-	border-right:solid 80px hsla(30, 100%, 50%);
-	border-bottom:solid 20px transparent;
-}
 /* ------------------progress style--------------------- */
 #progre{
 	margin:5px auto 10px 0px;
