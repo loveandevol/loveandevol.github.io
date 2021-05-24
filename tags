@@ -4,11 +4,11 @@
 !_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
 !_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
 !_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
-!_TAG_PROC_CWD	/home/ceelia/loveandevol.github.io/	//
+!_TAG_PROC_CWD	/home/ceelia/Code/loveandevol.github.io/	//
 !_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
-!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20210328.0/
+!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20210110.0/
 #contain	ALL_CSS/cee_blog.css	/^#contain{$/;"	i
 #header	ALL_CSS/uniform.css	/^#header{$/;"	i
 #header h2	ALL_CSS/uniform.css	/^#header h2{		$/;"	s
@@ -73,6 +73,7 @@ Teacher	HomeWork/java/test5/001/Teacher.java	/^public class Teacher{$/;"	c
 Village	HomeWork/java/test5/002/Village.java	/^	Village(String s){$/;"	m	class:Village
 Village	HomeWork/java/test5/002/Village.java	/^class Village{$/;"	c
 a	HomeWork/java/test7/002/Rect.java	/^    double a,b;$/;"	f	class:Rect
+actors	HomeWork/python/test9.py	/^    actors=data_3.at[i,'演员'].split(',')$/;"	v
 addPeopleNumber	HomeWork/java/test5/002/Village.java	/^	void addPeopleNumber(int n){$/;"	m	class:Village
 age	HomeWork/java/test6/002/Person.java	/^	int age;$/;"	f	class:Person
 area	HomeWork/java/test7/002/Student.java	/^    public double area(Geometry ...p){$/;"	m	class:Student
@@ -96,6 +97,11 @@ cry	HomeWork/java/test7/001/Animal.java	/^    public void cry(){$/;"	m	class:Ani
 cry	HomeWork/java/test7/001/Cat.java	/^    public void cry(){$/;"	m	class:Cat
 cry	HomeWork/java/test7/001/Dog.java	/^    public void cry(){$/;"	m	class:Dog
 data	HomeWork/python/test6.py	/^data=pd.read_sql("SELECT * FROM meal_order_detail1",con=connection)$/;"	v
+data	HomeWork/python/test9.py	/^data=[item[1] for item in pairs]$/;"	v
+data_1	HomeWork/python/test10.py	/^data_1=np.load('.\/economic.npz',allow_pickle=True)$/;"	v
+data_1	HomeWork/python/test9.py	/^data_1=pd.DataFrame(np.random.rand(500,3),$/;"	v
+data_2	HomeWork/python/test9.py	/^data_2=pd.DataFrame(np.random.rand(10,4))$/;"	v
+data_3	HomeWork/python/test9.py	/^data_3=pd.read_excel('.\/data\/电影导演演员.xlsx')$/;"	v
 database	HomeWork/java/test6/001/Programmer.java	/^	String database;$/;"	f	class:Programmer
 detail	HomeWork/python/test6.py	/^detail=pd.read_csv('~\/data\/detail.csv')$/;"	v
 education	HomeWork/java/test6/001/Employee.java	/^	String education;$/;"	f	class:Employee
@@ -114,6 +120,7 @@ getSpeed	HomeWork/java/test4/Tank.java	/^	double getSpeed(){$/;"	m	class:Tank
 header	cee_blog.html	/^        <div id="header" class="">$/;"	I
 header	homework.html	/^        <div id="header">$/;"	I
 header	index.html	/^        <div id="header">$/;"	I
+index	HomeWork/python/test9.py	/^index=[item[0] for item in pairs]$/;"	v
 inner	cee_blog.html	/^                <div id="inner">$/;"	I
 left	cee_blog.html	/^            <div id="left">$/;"	I
 left	index.html	/^        <div id="left" class="">$/;"	I
@@ -147,12 +154,21 @@ nav ul li:hover	ALL_CSS/uniform.css	/^nav ul li:hover{$/;"	s
 nav ul li:nth-child(4)	ALL_CSS/uniform.css	/^nav ul li:nth-child(4){$/;"	s
 newdetail1	HomeWork/python/test6.py	/^newdetail1=detail.replace(detail['counts'].max(),detail['counts'].mean())$/;"	v
 newdetail1	HomeWork/python/test6.py	/^newdetail1=newdetail1.replace(newdetail1['amounts'].max(),newdetail1['amounts'].mean())$/;"	v
+np	HomeWork/python/test10.py	/^import numpy as np$/;"	I	nameref:module:numpy
 np	HomeWork/python/test4.py	/^import numpy as np$/;"	I	nameref:module:numpy
 np	HomeWork/python/test5.py	/^import numpy as np$/;"	I	nameref:module:numpy
+np	HomeWork/python/test9.py	/^import numpy as np$/;"	I	nameref:module:numpy
 ol li	ALL_CSS/homework.css	/^ol li{$/;"	s
 opera_system	HomeWork/java/test6/001/Programmer.java	/^	String opera_system;$/;"	f	class:Programmer
+pair	HomeWork/python/test9.py	/^        pair=(actor,data_3.at[i,'电影名称'])$/;"	v
+pairs	HomeWork/python/test9.py	/^pairs=[]$/;"	v
+pairs	HomeWork/python/test9.py	/^pairs=sorted(pairs,key=lambda item:int(item[0][2:]))$/;"	v
+pd	HomeWork/python/test10.py	/^import pandas as pd$/;"	I	nameref:module:pandas
 pd	HomeWork/python/test6.py	/^import pandas as pd$/;"	I	nameref:module:pandas
+pd	HomeWork/python/test9.py	/^import pandas as pd$/;"	I	nameref:module:pandas
 peopleNumber	HomeWork/java/test5/002/Village.java	/^	int peopleNumber;$/;"	f	class:Village
+plt	HomeWork/python/test10.py	/^import matplotlib.pyplot as plt$/;"	I	nameref:module:matplotlib.pyplot
+plt	HomeWork/python/test9.py	/^import matplotlib.pyplot as plt$/;"	I	nameref:module:matplotlib.pyplot
 print_info	HomeWork/java/test6/001/Employee.java	/^	int print_info(){$/;"	m	class:Employee
 print_info	HomeWork/java/test6/001/Programmer.java	/^	public int print_info(){$/;"	m	class:Programmer
 print_info	HomeWork/java/test6/002/Person.java	/^	void print_info(){$/;"	m	class:Person

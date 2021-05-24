@@ -25,7 +25,7 @@ article ol{
 /* ------------------form style--------------------- */
 .form {/* define 表单框样式 */
 	height:30px;
-	margin:30px; auto;
+	margin:30px auto;
 }
 .form input[type=text]{/* define 表单对象样式 */
 	width:100%;
