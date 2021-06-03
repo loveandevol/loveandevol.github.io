@@ -1,39 +1,85 @@
 #left{
 	float:left;
+    width:19%;
 }
+
+/* Web中部的样式 */
 #main{
-	height:300px;
+    border-left:2px solid;
+    border-right:2px solid;
+    height: 1000px;
 	padding-top:40px;
-	background:url(Images/code.png);
+    padding-left:30px;
+    padding-right:30px;
+    margin-bottom:50px;
 }                            
+#main h3{  /*表单标题*/
+    color: bisque;
+}
+/*upper CSS*/
+#upper, #middle, #lower{
+    width:800px;
+    height:300px;
+    margin-bottom:10px;
+}
+#upper form{
+    float:left;
+    width:230px;
+    padding:10px;
+}
+.input_margin input{
+    margin-left:20px;
+    margin-bottom:10px;
+}
+/*middle CSS*/
+#middle{
+    padding:40px;
+    height:200px;
+}
+#middle form{
+    padding:10px;
+    color: tan;
+    font-size: 20px;
+}
+/*lower CSS*/
+#lower{
+    padding:50px;
+}
+#lower input{
+    width:100%;
+    margin-bottom:50px;
+}
+#lower a{
+    font-size:40px;
+    text-decoration:none;
+    padding:30px;
+    color: black;
+    border-color:white;
+    border-radius:10px;
+    border-style:solid;
+    width:50px;
+    background-color:orange;
+}
 /* ------------------progress style--------------------- */
 #progre{
 	margin:5px auto 10px 0px;
 }
-/* ------------------table style--------------------- */
-table{
-	padding:3px;
-	border-radius:20px;
-	border-collapse:collapse;	/*合并单元格边框*/
-	box-shadow:4px -10px 12px red;
+#form_login{
+    margin: 20px;
+    padding:20px;
+    height:220px;
+    width:250px;
+    border-width:5px;
+    border-style: solid;
+    border-color: tan;
 }
-.bit_title{
-	color:hsl(39,90%,50%);
+#left form div{
+    margin-top:20px;
 }
-th{
-	color: hsl(30, 100%, 50%);
-	font-size:15px;
-	font-weight:normal;
-	padding:5px;
-}
-td{
-	width:100px;
-	height:20px;
-	padding:5px;
-	border:solid 1px orange;
-}
-tr:nth-child(2), tr:nth-child(5){
-	background: hsla(30, 50%, 50%, .3);
+#login_button{
+    float:right;
+    margin-top:20px;
+    padding:2px 5px 2px;
 }
 /* ------------------footer style--------------------- */
 footer{
@@ -43,7 +89,7 @@ footer{
 	background-color:#4f4f4f;
 	border-radius:12px;
 	box-shadow:-10px 0 12px hsla(10, 100%, 50%, .9),
-		20px 10px 5px red;
+		20px 10px 5px brown;
 }
 footer address a{
 	display:inline;

@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户反馈界面</title>
+    <style>
+        input{
+            margin:0px 10px 0px;
+        }
+        #user_suggest{
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>反馈单</h1>
+    <form>
+        <p>
+        姓&nbsp;&nbsp;&nbsp;&nbsp;名:<input type="text" class="txt" name="username">
+        </p>
+        <p>
+        性&nbsp;&nbsp;&nbsp;&nbsp;别:
+        <input type="radio" name="sex" class="txt" value="male">男
+        <input type="radio" name="sex" class="txt" value="female">女
+        </p>
+        <p>
+        年&nbsp;&nbsp;&nbsp;&nbsp;龄:<input type="text" class="txt" name="age">
+        </p>
+        <p>
+        联系电话:<input type="text" class="txt" name="tel">
+        </p>
+        <p>
+        电子邮件:<input type="text" class="txt" name="email">
+        </p>
+        <p>
+        联系地址:<input type="text" class="txt" name="address">
+        </p>
+        请输入您对网站的建议<br>
+        <textarea name="suggestion" id="user_suggest" cols="30" rows="10"></textarea>
+        <input class="submit_button" type="submit" name="suggestion_submit" value="提交">
+        <input class="submit_button" type="reset" name="suggestion_reset" value="清除">
+    </form>
+</body>
+</html>
