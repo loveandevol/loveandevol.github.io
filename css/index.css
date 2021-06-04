@@ -1,17 +1,33 @@
+/*------------------big center----------------->*/
+
+#center {
+    height: 1200px;
+}
+
 #left{
-	float:left;
-    width:19%;
+    z-index: 5;
+    margin:10px 40px 0px 5px;
+    position: relative;
+    left: 30px;
+    width: 19%;
+    float: left;
 }
 
 /* Web中部的样式 */
 #main{
+    z-index: 6;
+    float: left;
     border-left:2px solid;
     border-right:2px solid;
+    width: 50%;
     height: 1000px;
 	padding-top:40px;
     padding-left:30px;
     padding-right:30px;
-    margin-bottom:50px;
+    margin: 0px 10px 50px;
+    position: relative;
+    background-color: #1C1C1C;
+    overflow: hidden;
 }                            
 #main h3{  /*表单标题*/
     color: bisque;
@@ -60,11 +76,20 @@
     width:50px;
     background-color:orange;
 }
+/*right CSS*/
+#right {
+    z-index: 7;
+    width:19%;
+    float: left;
+    position: relative;
+}
+/* ------------------video style-------------------------*/
 /* ------------------progress style--------------------- */
 #progre{
 	margin:5px auto 10px 0px;
 }
 #form_login{
+    color: hsla(hue, saturation, lightness, alpha);
     margin: 20px;
     padding:20px;
     height:220px;
@@ -82,16 +107,20 @@
     padding:2px 5px 2px;
 }
 /* ------------------footer style--------------------- */
-footer{
-	height:50px;
+#Bottom{
+    width: 100%;
+	height:100px;
 	padding:10px;
 	font-family:sans-serif;
-	background-color:#4f4f4f;
-	border-radius:12px;
-	box-shadow:-10px 0 12px hsla(10, 100%, 50%, .9),
-		20px 10px 5px brown;
+	background-color:tan;
 }
-footer address a{
-	display:inline;
-	color:white;
+.link {
+	display:block;
+	height:1em;
+	padding:5px 5px 5px 0.5em;
+	text-decoration:none; 
+	text-align:center;
+	color:black; 
+	font:bold italic large serif;
+    font-size:40px;
 }
