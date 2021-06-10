@@ -1,126 +1,129 @@
-/*------------------big center----------------->*/
-
-#center {
-    height: 1200px;
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family:Arial;
+  padding: 10px;
+  background-color: #f1f1f1;
+}
+.header {
+  padding: 30px;
+  text-align: center;
+  background-color: white;
+  animation-name: header_background;
+  animation-duration: 1s;
+}
+.header h1 {
+  font-size: 50px;
+  text-shadow: 2px 2px 5px gray;
+  animation-name: header_words;
+  animation-duration: 1s;
 }
 
-#left{
-    z-index: 5;
-    margin:10px 40px 0px 5px;
-    position: relative;
-    left: 30px;
-    width: 19%;
-    float: left;
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+  animation-name: TopNav;
+  animation-duration: 1s;
 }
-
-/* Web中部的样式 */
-#main{
-    z-index: 6;
-    float: left;
-    border-left:2px solid;
-    border-right:2px solid;
-    width: 50%;
-    height: 1000px;
-	padding-top:40px;
-    padding-left:30px;
-    padding-right:30px;
-    margin: 0px 10px 50px;
-    position: relative;
-    background-color: #1C1C1C;
-    overflow: hidden;
-}                            
-#main h3{  /*表单标题*/
-    color: bisque;
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 25px;
+  text-decoration: none;
+  transition: transform 1s;
+  transition-timing-function: ease;
 }
-/*upper CSS*/
-#upper, #middle, #lower{
-    width:800px;
-    height:300px;
-    margin-bottom:10px;
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  transform: scale(1.3,1.3);
 }
-#upper form{
-    float:left;
-    width:230px;
-    padding:10px;
+.leftcolumn {
+  padding: 20px;
+  float: left;
+  width: 75%;
 }
-.input_margin input{
-    margin-left:20px;
-    margin-bottom:10px;
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 30px;
 }
-/*middle CSS*/
-#middle{
-    padding:40px;
-    height:200px;
+.card  {
+  background-color: white;;
+  padding: 20px;
+  margin-top: 20px;
+  border-top-left-radius:20px;
+  background-image: url(../image/Designer\ _Flatline.svg);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  animation-name: Card_Anim;
+  animation-duration: 1s;
 }
-#middle form{
-    padding:10px;
-    color: tan;
-    font-size: 20px;
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
 }
-/*lower CSS*/
-#lower{
-    padding:50px;
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #ddd;
+  margin-top: 20px;
+  border: 10px solid transparent;
+  border-image: url(../image/TransferWise_Flatline.svg) round;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3);
 }
-#lower input{
-    width:100%;
-    margin-bottom:50px;
-}
-#lower a{
-    font-size:40px;
-    text-decoration:none;
-    padding:30px;
-    color: black;
-    border-color:white;
-    border-radius:10px;
-    border-style:solid;
-    width:50px;
-    background-color:orange;
-}
-/*right CSS*/
-#right {
-    z-index: 7;
-    width:19%;
-    float: left;
-    position: relative;
-}
-/* ------------------video style-------------------------*/
-/* ------------------progress style--------------------- */
-#progre{
-	margin:5px auto 10px 0px;
-}
-#form_login{
-    color: hsla(hue, saturation, lightness, alpha);
-    margin: 20px;
-    padding:20px;
-    height:220px;
-    width:250px;
-    border-width:5px;
-    border-style: solid;
-    border-color: tan;
-}
-#left form div{
-    margin-top:20px;
-}
-#login_button{
-    float:right;
-    margin-top:20px;
-    padding:2px 5px 2px;
-}
-/* ------------------footer style--------------------- */
-#Bottom{
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
     width: 100%;
-	height:100px;
-	padding:10px;
-	font-family:sans-serif;
-	background-color:tan;
+    padding: 0;
+    padding-bottom: 5px;
+  }
 }
-.link {
-	display:block;
-	height:1em;
-	padding:5px 5px 5px 0.5em;
-	text-decoration:none; 
-	text-align:center;
-	color:black; 
-	font:bold italic large serif;
-    font-size:40px;
+@media screen and (max-width: 400px) {
+  .rightcolumn {
+    margin-top:20px;
+  }
+}
+@keyframes header_background {
+  from {
+    background-color: black;
+  }
+  to {
+    background-color: white;
+  }
+}
+@keyframes header_words {
+  from {
+    font-size: 0;
+  }
+  to {
+    font-size: 50px;
+  }
+}
+@keyframes TopNav {
+  from {
+    background-color: #ddd;
+  }
+  to {
+    background-color: #333;
+  }
+}
+@keyframes Card_Anim {
+  from {
+    opacity: 0.2;
+    transform: scale(0.3,0.3);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1,1);
+  }
 }
