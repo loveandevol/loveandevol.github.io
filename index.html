@@ -1,40 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/index.css">
-  <title>Document</title>
-</head>
-<body>
-  <div class="header">
-    <h1>Cee-Blog</h1>
-  </div>
-  <div class="topnav">
-    <a href="#">Site</a>
-    <a href="#">Site</a>
-    <a href="#">Site</a>
-  </div>
-  <div class="row">
-    <div class="leftcolumn">
-      <div class="card">
-        <h2>Archlinux 安装</h2>
-        <h5>精简的安装步骤,June 10,2021</h5>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/fd0525c20d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Ceelia-Blog</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="left_image"></div>
+      <div class="title_writer">
+        <h1 onclick="ChangeWords(this)">Cee-Blog</h1>
+        <h2>一生只需做好一件事</h2>
+        <h4>--Writen by Ceelia</h4>
       </div>
-      <div class="card">
-        <h2>title</h2>
-        <h5>...</h5>
+      <div class="right_image"></div>
+    </div>
+    <!--TOP NAV 导航部分-->
+    <div class="topnav">
+      <a href="#"><i class="fas fa-angle-right"></i>Site</a>
+      <a href="#"><i class="fas fa-angle-right"></i>Site</a>
+      <a href="#"><i class="fas fa-angle-right"></i>Site</a>
+    </div>
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>Archlinux 安装</h2>
+          <h5>精简的安装步骤,June 10,2021</h5>
+          <!-- 文章部分开头 -->
+          1,确认启动模式:
+          <div class="code">ls /sys/firmware/efi/efivars</div>
+          1.如果存在此文件则是UEFI 2.如果不则是BIOS
+          我的愚见:在安装过程中两者的分区方案是不一样的,其他没什么影响
+          2,使用iwctl连上wifi:
+          <div class="code">
+            iwctl --passphrase 你的密码 station 你的网卡名 connect 你的wifi名
+            <br />
+            比如: iwctl --passphrase 12345678 station wlp2s0 connect
+            TP_LINK_1234
+          </div>
+          3,给硬盘分个块(分区):
+          <div class="code">
+            fdisk 你的磁盘 <br />
+            比如: fdisk /dev/sda, fdisk /dev/nvme0n1
+          </div>
+          4,给主块装饰一下(格式化):
+          <div class="code">
+            mkfs.ext4 /dev/主分区 <br />
+            例如:mkfs.ext4 /dev/sda2 <br />
+            <br />
+            如果有交换分区:
+          </div>
+          <div class="code">
+            mkswap /dev/交换分区 <br />
+            例如:mkswap /dev/sda3 <br />
+          </div>
+          5,连通折腾过的磁盘(挂载):
+          <div class="code">
+            mount /dev/主分区 /mnt <br />
+            例如:mount /dev/sda2 <br />
+            <br />
+            如果有交换分区,启用功能:
+          </div>
+          <div class="code">
+            swapon /dev/交换分区 <br />
+            栗子:swapon /dev/sda3 <br />
+          </div>
+          6,连上了就开始往里面注入一些东西(@#$%!):
+          <div class="code">
+            pacstrap /mnt base linux linux-firmware grub vim networkmanager
+          </div>
+          此时一个简易的操作系统就安装完毕了,但如果我要想使用它还需要一些步步
+          7,生成一个自动连通磁盘的文件fstab(开机自动挂载)
+          <div class="code">genfstab -U /mnt >> /mnt/etc/fstab</div>
+          8,走进你的那个磁盘(!@$%!#$)
+          <div class="code">arch-chroot /mnt</div>
+          你甚至可以玩一玩:rm -rf / :) :) 9,内核的映射(并不是很懂,有人知道吗)
+          <div class="code">mkinitcpio -P</div>
+          10,设置密码(一定要一定要)
+          <div class="code">passwd</div>
+          有几次忘了这个,然后只能再进入arch~~.iso(装系统的系统),贼麻烦 :()
+          当你有了烟,有了心情,却发现没有火,你会发现还是抽不了 :<
+          11,来个打火机(启动加载器) :) 我选择的是--grub--
+          <div class="code">
+            grub-install --target=i386-pc /dev/你的磁盘 <br />
+            栗子: 1.BIOS: grub-install --target=i386-pc /dev/sda
+          </div>
+          <div class="code">
+            grub-install --target=x86_64-efi --efi-directory=esp
+            --bootloader-id=GRUB <br>
+            栗子: 2.UEFI: grub-install --target=x86_64-efi --efi-directory=esp
+            --bootloader-id=GRUB
+          </div>
+          12,打火机就绪(配置grub)
+          <div class="code">grub-mkconfig -o /boot/grub/grub.cfg 完</div>
+          13,如果不想强行关机,可以先退出chroot
+          <div class="code">exit</div>
+          14,在arch~~.iso模式下重启
+          <div class="code">reboot 真的完</div>
+          <!-- 文章部结束 -->
+          <div class="card_image"></div>
+        </div>
+        <div class="card">
+          <h2>KDE的颜色提取器</h2>
+          <h5>在屏幕上提取颜色</h5>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <h2>About Me</h2>
+          <div class="AboutMeImage"></div>
+          一名无名小卒
+        </div>
       </div>
     </div>
-    <div class="rightcolumn">
-      <div class="card">
-        <h2>About Me</h2>
-
-      </div>
+    <div class="picture"></div>
+    <div class="footer">
+      联系方式:ceelia0@163.com<i class="fas fa-envelope"></i>
     </div>
-  </div>
-  <div class="footer">
-    联系方式:ceelia0@163.com
-  </div>
-</body>
+  </body>
 </html>
