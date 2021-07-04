@@ -1,0 +1,33 @@
+/**
+ *
+ *  file: index.css
+ *  June 6,2021
+ *  writen by Mr.Cheng
+ *  References: github.com/animate-css/animate.css
+ *
+ */
+
+.code::before {
+  content: "[root@bla ~]# ";
+}
+.code {
+  color: #fcfcfc;
+  word-spacing: 5px;
+  background-color: #232627;
+  padding: 15px 5px;
+  width: 60%;
+  margin: 20px;
+  white-space: nowrap;
+  overflow: scroll;
+}
+@media screen and (max-width:800px) {
+  .code{
+    width: 70%;
+  }
+}
+@media screen and (max-width:600px) {
+  .code{
+    width: 90%;
+    font-size: small;
+  }
+}

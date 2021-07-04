@@ -7,27 +7,62 @@
  *
  */
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+i {
+    padding: 10px;
+}
+
+ul {
+    padding: 0px;
+}
+
+li {
+    padding: 10px;
+    margin: 10px;
+    list-style: none;
+}
+
+img {
+    width: 75%;
+}
+
 .code::before {
-  content: "[root@bla ~]# ";
+    content: "[root@bla ~]# ";
 }
+
 .code {
-  color: #fcfcfc;
-  word-spacing: 5px;
-  background-color: #232627;
-  padding: 15px 5px;
-  width: 60%;
-  margin: 20px;
-  white-space: nowrap;
-  overflow: scroll;
+    color: #fcfcfc;
+    word-spacing: 5px;
+    background-color: dimgray;
+    padding: 15px 5px;
+    width: 60%;
+    margin: 20px;
+    white-space: nowrap;
+    overflow: scroll;
 }
+
+.code-IRC::before {
+    content: "/";
+}
+
 @media screen and (max-width:800px) {
-  .code{
-    width: 70%;
-  }
+    .code {
+        width: 70%;
+    }
 }
+
 @media screen and (max-width:600px) {
-  .code{
-    width: 90%;
-    font-size: small;
-  }
+    .code {
+        width: 90%;
+        font-size: small;
+    }
 }
